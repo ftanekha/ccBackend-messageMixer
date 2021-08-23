@@ -17,3 +17,9 @@ in a module and allowing other developers to import these encryption functions i
 
 In this project, you will help Message Mixer Inc. extract and isolate its encryption functions into a module, 
 called encryptors.js, and then refactor message-mixer.js to use this module’s functions.
+
+to encode
+-node superEncoder.js encode
+
+to decode
+-node superEncoder.js decode 

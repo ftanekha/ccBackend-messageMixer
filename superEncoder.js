@@ -6,7 +6,7 @@ const encodeMessage = (str) => {
     return reverseCipher(
         symbolCipher(
             caesarCipher(
-                str, Math.floor(Math.random() * 26) 
+                str, 15 
             )
         )
     )
@@ -14,7 +14,13 @@ const encodeMessage = (str) => {
 
 const decodeMessage = (str) => {
 // Use the encryptor functions here.
-
+    return caesarCipher(
+        symbolCipher(
+            reverseCipher(str)
+        )
+        //26 - 15 (alphabet length)
+        , 11
+    )
 }
 
 // User input / output.
